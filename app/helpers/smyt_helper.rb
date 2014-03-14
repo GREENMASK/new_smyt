@@ -1,0 +1,2 @@
+module SmytHelper
+end
