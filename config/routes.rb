@@ -2,9 +2,9 @@ Smyt::Application.routes.draw do
 
   root 'smyt#index'
   get  '/login'=> 'smyt#login'
-  match 'auth/:provider/callback', to: 'sessions#create'
-  match 'auth/failure', to: redirect('/')
-  match 'signout', to: 'session#destroy', as: 'signout'
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'session#destroy', as: 'signout'
 
  
   # The priority is based upon order of creation: first created -> highest priority.
