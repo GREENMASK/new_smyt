@@ -19,7 +19,9 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'therubyracer'
 gem 'execjs'
+# facebook
 gem 'koala', '~> 1.8.0'
+gem 'omniauth-facebook'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
